@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "If you can fake sincerity, you can fake pretty much anything.",
         "Reality is almost always wrong.",
         "You want to know how I am? I'm in a hospital with a clown. How do you think I am?",
-        "It's not lupus. It's never lupus."
-        "Have you used the medicine drug?"
-        "Are you intentionally being dense right now? HUH."
+        "It's not lupus. It's never lupus.",
+        "Have you tried the medicine drug?",
+        "Everybody lies."
     ];
 
     // Get the button and the paragraph element from the HTML using their IDs
