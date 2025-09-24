@@ -1,22 +1,100 @@
-html {
-  font-size: 14px;
-}
+/* style.css */
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Style for the entire page */
 body {
-  margin-bottom: 60px;
+    /* Requirement: A background color for the entire page */
+    background-color: #1a2639; /* A dark, clinical blue */
+    /* Requirement: A contrasting text color */
+    color: #d3d3d3; /* Light gray for readability */
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2rem; /* Add some space around the edges */
 }
+
+/* This container holds all content and centers it */
+.container {
+    max-width: 800px; /* Limit the width for better readability on large screens */
+    margin: 0 auto; /* This centers the container horizontally */
+    /* Requirement: All content on the page should be centered */
+    text-align: center;
+}
+
+/* Style for the main title */
+#Title {
+    font-size: 3rem;
+    color: #ffffff;
+    border-bottom: 3px solid #c20000; /* A sharp red accent */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Requirement: Circular/rounded image for the cover art */
+#CoverArt {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* This is what makes the image a perfect circle */
+    border: 5px solid #4a5b7c; /* A border to make it pop */
+    object-fit: cover; /* Prevents the image from being squished */
+    margin-bottom: 20px;
+}
+
+/* Style for the IMDB rating */
+#Rating {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #a9a9a9;
+    margin-bottom: 20px;
+}
+
+/* Ensure the trailer has some space around it */
+#Trailer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%; /* Makes the trailer responsive */
+}
+
+/* Style for the summary paragraph */
+#Summary {
+    text-align: justify; /* Justified text looks cleaner for paragraphs */
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Styling for the list of actors */
+#Actors {
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+    #Actors li {
+        background-color: #2a3a52;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+/* Styling for the IMDB link */
+a {
+    display: inline-block;
+    background-color: #c20000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    a:hover {
+        background-color: #e03030; /* Lighter red on hover */
+    }
+
+/* Styling for the bonus quote section */
+.quote-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #4a5b7c;
+}
+
+#quoteButton {
