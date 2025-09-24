@@ -98,3 +98,20 @@ a {
 }
 
 #quoteButton {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4a5b7c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#quoteDisplay {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #ffffff;
+    height: 40px; /* Reserve space to prevent layout shift */
+}
